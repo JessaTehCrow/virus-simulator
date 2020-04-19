@@ -4,15 +4,22 @@ import utils
 import graph
 
 pygame.init()
-nodes = 300
-tot = nodes
-speed = 1.5
-infection_range = 20
-width = 900
-height = 900
-rec_time_min = 300
-rec_time_max = 2400
 
+#############################################
+### ==---==--==    SETTINGS    ==--==--== ###
+#############################################
+nodes = 800             #Amount of nodes in final simulation
+speed = 1.5             #Max speed of nodes
+infection_range = 20    #Range of infection around infected nodes
+width = 900             #Image width   
+height = 900            #Image height
+rec_time_min = 300      #Recover time for node to either die / recover
+rec_time_max = 2400     #Recover time for node to either die / recover
+#############################################
+### ==---==--==    SETTINGS    ==--==--== ###
+#############################################
+
+tot = nodes
 nodes = utils.get_nodes(nodes,[width,height],speed=speed,irange=infection_range,rec_max=rec_time_max,rec_min=rec_time_min)
 
 screen = pygame.display.set_mode([width,height])

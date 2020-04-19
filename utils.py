@@ -1,5 +1,4 @@
 from PIL import Image
-import cprint
 import os
 import random
 
