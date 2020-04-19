@@ -5,7 +5,8 @@
 - Make sure you have the python module `Pillow` (Can be installed with `pip install pillow`)
 - Make sure you have python version 3+
 
-If you have the needed installations, run the `main.py` script, follow the instructions in the terminal.
+If you have the needed installations, run the `main.py` script.
+To change the simulation, you can change some values in the `main.py` script, clearly indicated what to edit.
 
 Then watch.
 
